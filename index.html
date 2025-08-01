@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/poems.css">
     <title>Setswana Poems</title>
 </head>
@@ -16,11 +17,14 @@
         </header>
 
         <main>
-            <form id="poem-generator-form">
-                <input type="text" placeholder="Enter the topic of the setswana poem" autofocus required autocomplete="off" class="instructions" />
-                <input type="submit" class="submit-button" />
-            </form>
-            <div class="poem" id="poem">
+            <div class="form-container">
+                <form id="poem-generator-form">
+                    <input type="text" placeholder="Enter the topic of a setswana poem" autofocus required autocomplete="off" class="instructions" id="user-instructions" />
+                    <input type="submit" class="submit-button" />
+                </form>
+                <div class="hint">ie: Love, Mothers, Seoul</div>
+            </div>
+            <div class="poem  hidden" id="poem">
             </div>
         </main>
 
